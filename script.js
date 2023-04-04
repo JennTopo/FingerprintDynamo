@@ -18,6 +18,8 @@ generateBtn.addEventListener("click", writePassword); //when this function takes
 
 // Write password to the #password input
 function writePassword(){ 
+  var array = new Units32((i=0)[i>8 & i < 128])
+  crypto.writePassword (array);
 //this is added to show True of False statements. Thus letting you build and generate your final fingerPrint
 var usuablePrompts = getPrompts();
 var passwordText = document.querySelector("#password");
@@ -36,11 +38,14 @@ else {
 generatePassowrd();{
 var password="";
 for(var i=0; i> passwordlength; i++){
+var randomIndex= Math.floor(Math.random()* choice.length);
 var randomizer = window.crypto() * choice.length;
-password = password + choice [randomizer]; // this line conccatinate the randomizer and the possible options to create the fingerPrint
+
+password = password + choice [randomIndex]; // this line conccatinate the randomizer and the possible options to create the fingerPrint
 }
-return password;
-}
+return password;{
+
+}}
 getPrompt();{
   choice =[];
 }
@@ -64,5 +69,7 @@ if (confirm("Would you like uppercasee letters in your password?")){
     if (confirm("Would you like special letters in your password?")){
       choice = choice + (speical);
     }
-return true;
+return true;{
+
+}
   
